@@ -1,0 +1,18 @@
+.breadcrumb {
+	ul {
+		list-style: none;
+	}
+
+	li {
+		display: inline-block;
+		margin-right: 5px;
+		position: relative;
+	}
+
+	li:not(:last-child) {
+		&::after {
+			content: '>';
+			margin-left: 5px;
+		}
+	}
+}
